@@ -20,6 +20,9 @@ class Student(models.Model):
     number = models.CharField(max_length=50)
     image = models.ImageField(upload_to="student/", default="avatar.png")
     
+    def __str__(self):
+        return self.number + " " + self.first_name
+    
     
     
     
