@@ -10,10 +10,10 @@ class Student(models.Model):
     phone = models.CharField(max_length=50)
     
     GENDER = (
-        ("1","Female")
-        ("2","Male")
-        ("3","Other")
-        ("4","Prefer Not Say")
+        ("1","Female"),
+        ("2","Male"),
+        ("3","Other"),
+        ("4","Prefer Not Say"),
     )    
     gender = models.CharField(max_length=40, choices=GENDER)
     number = models.CharField(max_length=50)
