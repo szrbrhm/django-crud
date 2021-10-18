@@ -23,3 +23,4 @@ class Student(models.Model):
     
     
     
+    
